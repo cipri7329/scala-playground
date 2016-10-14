@@ -5,9 +5,19 @@ object ScalaApp {
 
   def main(args: Array[String]): Unit = {
 
-    this.string_op1(args)
+//    this.string_op1(args)
+
+    val name = "cipri"
+    println(f"name is $name")
+
+    println(concateStrings("x", "y", "z"))
+    println(concateStrings("x", "y"))
+    println(concateStrings("x"))
 
   }
+
+
+  def concateStrings(first: String = "a", second: String = "b", third: String = "c"): String = first + second + third
 
   def string_op2() : Unit = {
 
