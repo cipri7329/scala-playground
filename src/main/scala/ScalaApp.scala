@@ -5,23 +5,32 @@ object ScalaApp {
 
   def main(args: Array[String]): Unit = {
 
-//    this.string_op1(args)
-
-    val name = "cipri"
-    println(f"name is $name")
-
-    println(concateStrings("x", "y", "z"))
-    println(concateStrings("x", "y"))
-    println(concateStrings("x"))
+    listSample()
 
   }
 
+  def listSample() : Unit = {
+
+    var list : List[Int] = List(1,2,3,4, 5)
+
+    println(list)
+
+    //append
+    val list2 = list :+ 6;
+
+    println(list)
+    println(list2)
+
+  }
 
   def concateStrings(first: String = "a", second: String = "b", third: String = "c"): String = first + second + third
 
   def string_op2() : Unit = {
 
     val str = "here|are|more|values|movie1|movie2|movie2|movie3";
+
+    val name = "cipri"
+    println(f"name is $name")
 
 
     println(str);
